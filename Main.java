@@ -10,16 +10,26 @@ public class Main
 
   public static void reverse(String[] arr)
   {
-
+    for (int i=arr.length(); i>0; i--){
+      System.out.println(arr[i]);
+    }
   }
 
   public int product(int[] arr)
   {
-    return 0;
+    product = arr[0]
+    for (int i=1; i<=arr.length(); i++){
+      product*=i;
+    }
+    return product;
   }
 
   public double average(double[] arr)
   {
-    return 0.0;
+    double sum = 0;
+    for (int i=0; i<arr.length(); i++){
+      sum+=arr[i];
+    }
+    return sum/2;
   }
 }
